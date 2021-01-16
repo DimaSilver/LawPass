@@ -26,7 +26,7 @@ a{
 }
 body{
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   color: #fff;
   @extend %open-sans__regular;
 }
@@ -37,6 +37,11 @@ body{
 }
 .container__small{
   max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container__special{
+  max-width: 575px;
   padding: 0 15px;
   margin: 0 auto;
 }
