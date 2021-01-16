@@ -45,3 +45,12 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+.title{
+  @extend %raleway-Bold;
+}
+.tabs-content{
+  display: none;
+}
+.tabs-content.tabs-content--active{
+  display: block;
+}
