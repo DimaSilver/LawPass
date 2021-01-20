@@ -23,4 +23,7 @@ $(function () {
     $('.menu__mobile').on("click", function(){
         $('.menu__list-mobile').slideToggle();
     });
+    $('.footer__top-item__title').on("click", function () {
+       $('.footer__top-item__click').slideToggle();
+    });
 });
