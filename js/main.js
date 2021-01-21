@@ -23,7 +23,24 @@ $(function () {
     $('.menu__mobile').on("click", function(){
         $('.menu__list-mobile').slideToggle();
     });
-    $('.footer__top-item__title').on("click", function () {
-       $('.footer__top-item__click').slideToggle();
+    function myFunction() {
+        if($(window).width() < 951)
+        {
+            $('.footer__top-inner').addClass('footer__top-inner--mobile');
+            $('.footer__top-item__click').addClass('footer__top-item__click--mobile');
+            $('.footer__top-item__title').on('click', function () {
+                $('.footer__top-item__click.footer__top-item__click--mobile').toggleClass('footer__top-item__click--mobile__active');
+            });
+
+        }
+        else
+        {
+            $('.footer__top-inner').removeClass('footer__top-inner--mobile');
+            $('.footer__top-item__click').removeClass('footer__top-item__click--mobile');
+        }
+    }
+    myFunction();
+    $(window).resize(function() {
+        myFunction();
     });
 });
